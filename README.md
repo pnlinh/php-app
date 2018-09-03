@@ -12,9 +12,9 @@ Development Laravel use Docker
 `docker volume create mydata`
 
 ##### 4. Run container and connect it
-`docker run --name=app --network=appnet -d --rm -p 80:80 -v $(pwd)/application:/var/www/html pnlinh/app:latest`
-
 ```
+docker run --name=app --network=appnet -d --rm -p 80:80 -v $(pwd)/application:/var/www/html pnlinh/app:latest
+
 docker run --rm -d \
 --name=mysql \
 --network=appnet \
