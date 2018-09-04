@@ -37,6 +37,6 @@ DB_PASSWORD=root
 ```
 
 ##### 6. Run application
-`docker exec -it w /var/www/html app php artisan migrate`
+`docker exec -it -w /var/www/html app php artisan migrate`
 
 Browser to: `http://localhost`
